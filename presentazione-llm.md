@@ -1,6 +1,6 @@
 # Introduzione ai Large Language Models (LLM)
 ### Corso RAG per applicazioni ERP e CRM
-#### Incontro 1 - [Data]
+#### Incontro 1 - [06/05/2025]
 
 ---
 
@@ -33,7 +33,7 @@
 ## Introduzione e presentazione
 
 ### Chi sono
-- [Inserire breve biografia del docente]
+- Salvatore Frasconà
 - Esperienze con AI e LLM
 - Progetti rilevanti
 
@@ -120,8 +120,6 @@
 - Focalizzazione su parti rilevanti della sequenza
 - Cattura relazioni indipendentemente dalla distanza
 - Permette parallelizzazione (vs RNN sequenziali)
-
-![Meccanismo di Self-Attention](https://data-science-blog.com/wp-content/uploads/2021/04/self-attention-1024x717.png)
 
 ---
 
