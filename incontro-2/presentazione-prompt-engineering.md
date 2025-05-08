@@ -1,6 +1,6 @@
 # Prompt Engineering Fondamentale
 ### Corso RAG per applicazioni ERP e CRM
-#### Incontro 2 - [20/05/2025]
+#### Incontro 2 - [08/05/2025]
 
 ---
 
