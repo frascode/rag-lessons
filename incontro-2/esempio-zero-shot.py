@@ -11,13 +11,13 @@ def analyze_feedback_zero_shot(feedback):
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "Sei un analista CRM esperto."},
-            {"role": "user", "content": f"Classifica il seguente feedback cliente come POSITIVO, NEUTRO o NEGATIVO e fornisci una breve spiegazione:\n\n'{feedback}'"}
+            {"role": "user", "content": f"Classifica pensando nel seguente modo: - Tono del feedback; - Lunghezza del feedback. Ll seguente feedback cliente fornendo un punteggio da 1 a 10.\n\n'{feedback}'"}
         ]
     )
     return response.choices[0].message.content
 
 # Test con alcuni feedback
-feedback_samples = [
+feedback_samples = [ 
     "Il vostro sistema CRM ha migliorato significativamente la nostra gestione dei clienti. L'interfaccia è intuitiva e il supporto è eccellente.",
     "L'implementazione è andata bene ma abbiamo riscontrato alcuni problemi con l'integrazione dei dati legacy. Il supporto tecnico ha risposto con tempi accettabili.",
     "Dopo tre mesi dall'implementazione, continuiamo a riscontrare errori frequenti. La formazione fornita è stata insufficiente e il sistema è troppo complesso per i nostri operatori."
