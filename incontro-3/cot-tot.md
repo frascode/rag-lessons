@@ -481,4 +481,4 @@ Progetto completo nei file di esercitazione
 ---
 
 ## Grazie dell'attenzione!
-### Prossimo incontro: Database Vettoriali - Fondamenti
+### Prossimo incontro: RAG
