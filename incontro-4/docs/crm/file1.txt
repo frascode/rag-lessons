@@ -1,0 +1,110 @@
+# Procedure di Gestione Lead
+
+## Definizione e Qualificazione Lead
+
+Una lead è definita come un potenziale cliente che ha mostrato interesse nei nostri prodotti o servizi tramite una o più azioni:
+
+- Compilazione di un form sul sito web
+- Download di contenuti (white paper, e-book, brochure)
+- Partecipazione a webinar o eventi
+- Interazione con campagne di marketing
+- Referral da clienti esistenti
+
+### Processo di Qualificazione BANT
+
+Ogni lead viene qualificata secondo il modello BANT:
+
+1. **Budget**: Capacità finanziaria di acquistare il prodotto/servizio
+2. **Autorità**: Ruolo decisionale o capacità di influenzare decisori
+3. **Necessità**: Problemi o esigenze che i nostri prodotti/servizi possono risolvere
+4. **Tempistica**: Quando il potenziale cliente intende effettuare l'acquisto
+
+### Scoring delle Lead
+
+Le lead vengono classificate secondo un sistema di punteggio (0-100) basato su:
+
+| Criterio | Peso | Punteggio |
+|----------|------|-----------|
+| Corrispondenza con ICP (Ideal Customer Profile) | 30% | 0-30 |
+| Livello di engagement | 25% | 0-25 |
+| Qualificazione BANT | 35% | 0-35 |
+| Fonte di acquisizione | 10% | 0-10 |
+
+- **Lead calda** (Hot): 75-100 punti
+- **Lead tiepida** (Warm): 40-74 punti
+- **Lead fredda** (Cold): 0-39 punti
+
+## Gestione del Lead Nurturing
+
+### Workflow per Lead Calde
+
+1. Contatto telefonico entro 24 ore
+2. Email di follow-up personalizzata
+3. Proposta di una demo o consulenza gratuita
+4. Assegnazione al Sales Executive appropriato
+5. Invio di materiale informativo specifico
+6. Follow-up entro 3 giorni lavorativi
+
+### Workflow per Lead Tiepide
+
+1. Email personalizzata entro 48 ore
+2. Inserimento in sequenza email educazionale
+3. Invito a webinar o eventi rilevanti
+4. Contatto telefonico dopo 2-3 interazioni positive
+5. Condivisione di case study pertinenti
+6. Follow-up ogni 7-10 giorni
+
+### Workflow per Lead Fredde
+
+1. Inserimento in newsletter generale
+2. Condivisione di contenuti educativi di base
+3. Monitoraggio delle interazioni
+4. Riqualificazione dopo 30 giorni
+5. Invito a eventi di settore
+6. Follow-up mensile
+
+## Trasferimento da Marketing a Vendite
+
+### Criteri di Sales Qualification
+
+Una lead passa da Marketing a Vendite quando soddisfa almeno tre dei seguenti criteri:
+
+- Punteggio lead ≥ 75
+- Completamento di una richiesta di contatto o demo
+- Visita multipla alle pagine di prodotto/pricing
+- Apertura/click su almeno 3 email consecutive
+- Partecipazione a un webinar/evento con domande specifiche
+- Esplicita manifestazione di interesse all'acquisto
+
+### Procedura di Handover
+
+1. Il Marketing Qualified Lead (MQL) viene notificato al Sales team
+2. Briefing completo su storico interazioni e informazioni raccolte
+3. Assegnazione lead in base a:
+   - Settore industriale
+   - Dimensione aziendale
+   - Area geografica
+   - Expertise del Sales Executive
+4. Conferma di presa in carico entro 4 ore lavorative
+5. Primo contatto commerciale entro 24 ore
+
+## Monitoraggio e Reporting
+
+### KPI di Lead Management
+
+| Indicatore | Target | Frequenza misurazione |
+|------------|--------|------------------------|
+| Lead conversion rate | >15% | Mensile |
+| Tempo medio qualificazione | <3 giorni | Settimanale |
+| Costo per lead | <€50 | Mensile |
+| MQL to SQL conversion | >30% | Mensile |
+| Tempo di risposta lead | <4h | Giornaliera |
+| Tasso abbandono lead | <20% | Mensile |
+
+### Reportistica
+
+1. Dashboard real-time per lead generation e conversion rate
+2. Report settimanale su qualità delle lead per fonte
+3. Report mensile su performance complessiva processo lead management
+4. Analisi trimestrale ROI per canale di acquisizione
+5. Revisione semestrale delle buyer personas e ICP
