@@ -1,6 +1,6 @@
 # Introduzione ai Large Language Models (LLM)
 ### Corso RAG per applicazioni ERP e CRM
-#### Incontro 1 - [06/05/2025]
+#### Incontro 1
 
 ---
 
@@ -140,6 +140,8 @@
 - **Encoder**: processa l'input bidirezionalmente (BERT)
 - **Decoder**: genera output autoregressivamente (GPT)
 - **Encoder-Decoder**: traduzione, riassunti (T5, BART)
+
+Approfondimento: https://medium.com/@reyhaneh.esmailbeigi/bert-gpt-and-bart-a-short-comparison-5d6a57175fca
 
 ![Architettura Transformer](https://miro.medium.com/max/1400/1*BHzGVskWGS_3jEcYYi6miQ.png)
 
