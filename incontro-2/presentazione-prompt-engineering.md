@@ -1,6 +1,5 @@
-# Prompt Engineering Fondamentale
+# Prompt Engineering
 ### Corso RAG per applicazioni ERP e CRM
-#### Incontro 2 - [08/05/2025]
 
 ---
 
@@ -8,9 +7,8 @@
 - Benvenuto e riepilogo incontro precedente
 - Principi del Prompt Engineering
 - Componenti di un prompt efficace
-- Tecniche di prompting: zero-shot, one-shot, few-shot
+- Tecniche di prompting: zero-shot, one-shot, few-shot, ReAct, CoT e ToT
 - Strategie avanzate di prompting
-- **Pausa (15 min)**
 - Problemi comuni e soluzioni
 - Implementazione di prompt con contesto
 - Esercitazioni pratiche
@@ -22,7 +20,7 @@
 ## Obiettivi dell'incontro
 - Comprendere i principi fondamentali del prompt engineering
 - Identificare e applicare i componenti di un prompt efficace
-- Differenziare tra approcci zero-shot, one-shot e few-shot
+- Differenziare tra approcci zero-shot, one-shot, few-shot, ReAct, CoT e ToT.
 - Riconoscere e risolvere problemi comuni nei prompt
 - Implementare prompt strutturati con contesto
 - Sviluppare prompt specifici per ambiti ERP/CRM
@@ -155,7 +153,7 @@ e alcuni report non funzionano correttamente."
 
 ---
 
-## Zero-shot, One-shot e Few-shot Learning
+
 
 ### Esempio One-shot
 ```
@@ -175,7 +173,6 @@ funzionano correttamente."
 
 ---
 
-## Zero-shot, One-shot e Few-shot Learning
 
 ### Few-shot learning
 - **Definizione**: fornisce multipli esempi del task
@@ -184,8 +181,6 @@ funzionano correttamente."
 - **Svantaggi**: consuma più token, prompt più lunghi
 
 ---
-
-## Zero-shot, One-shot e Few-shot Learning
 
 ### Esempio Few-shot
 ```
@@ -206,8 +201,6 @@ funzionano correttamente."
 
 ---
 
-## Strategie Avanzate di Prompting
-
 ### Chain-of-Thought (CoT)
 - Incoraggia il modello a mostrare il ragionamento
 - "Pensa passo-passo" migliora accuratezza su problemi complessi
@@ -221,8 +214,6 @@ e suggerire soluzioni.
 
 ---
 
-## Strategie Avanzate di Prompting
-
 ### Esempi Chain-of-Thought
 ```
 Problema: Il report mensile di vendite impiega 30 minuti per essere generato, 
@@ -235,9 +226,6 @@ Passo 3: Analizziamo il volume di dati coinvolti...
 ```
 
 ---
-
-## Strategie Avanzate di Prompting
-
 ### Prompt Decomposition
 - Scomporre problemi complessi in sotto-problemi
 - Affrontare sequenzialmente parti della soluzione
@@ -250,9 +238,6 @@ Infine, prepareremo un piano di implementazione.
 ```
 
 ---
-
-## Strategie Avanzate di Prompting
-
 ### ReAct (Reasoning + Acting)
 - Combinazione di ragionamento e azioni concrete
 - Il modello alterna riflessione e decisioni operative
@@ -264,10 +249,6 @@ Action: Identificare i punti di connessione tra i sistemi.
 Observation: I dati cliente non si sincronizzano correttamente.
 Thought: Potrebbe essere un problema di mapping dei campi...
 ```
-
----
-
-## PAUSA (15 minuti)
 
 ---
 
@@ -287,8 +268,6 @@ sufficienti, indica chiaramente cosa non puoi determinare.
 
 ---
 
-## Problemi Comuni e Soluzioni
-
 ### Risposte vaghe o generiche
 - **Problema**: output troppo generico, poco utile
 - **Soluzioni**:
@@ -303,8 +282,6 @@ specifici di implementazione in un contesto ERP SAP.
 
 ---
 
-## Problemi Comuni e Soluzioni
-
 ### Bias e preferenze
 - **Problema**: risposte influenzate da bias impliciti
 - **Soluzioni**:
@@ -318,8 +295,6 @@ considerando aziende di diverse dimensioni e settori.
 ```
 
 ---
-
-## Problemi Comuni e Soluzioni
 
 ### Distrazioni dal prompt originale
 - **Problema**: il modello ignora parti dell'istruzione
@@ -351,8 +326,6 @@ in silos. Budget per nuovo sistema: 1M€.
 ```
 
 ---
-
-## Implementazione di Prompt con Contesto
 
 ### Prompt template per analisi ERP
 ```
@@ -403,8 +376,6 @@ Dati cliente: {dati_json}
 
 ---
 
-## Caso d'uso: Prompt per ERP/CRM
-
 ### Troubleshooting problemi di implementazione
 ```
 Sei un esperto di implementazione [SISTEMA ERP/CRM].
@@ -421,8 +392,6 @@ Fornisci:
 ```
 
 ---
-
-## Caso d'uso: Prompt per ERP/CRM
 
 ### Generazione di documentazione utente
 ```
@@ -474,4 +443,4 @@ utilizzata da utenti con competenze [LIVELLO] e dovrebbe:
 ---
 
 ## Grazie dell'attenzione!
-### Prossimo incontro: Retrieval Augmented Generation (RAG) - Fondamenti
+### Prossimo incontro: VectorDB
