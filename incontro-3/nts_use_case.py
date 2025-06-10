@@ -48,3 +48,38 @@ query_classifier.invoke({'query': "Il vostro software è ottimo!"})
 
 # Aggiungere tutti gli elementi necessari per irrobustire la soluzione.
 # ...
+
+
+
+"""
+Entities:
+  Partenze:
+    attrs: [IDPartenza(int,PK), DataPartenza(date), IDCliente(int,FK), IDDestinazione(int,FK), IDVettore(int,FK), Quantità_Prenotata(float), Avv(bit), TBC(bit), OK(bit), Euro(bit), StatoPartenza(int), Stampato(bit), Quantità_Consegnata(float), Annotazioni_Partenze(varchar)]
+    rels: 
+      - belongs_to: CLIENTI_ANAGRAFICA (IDCliente->IDCliente_Anagrafica)
+      - belongs_to: Clienti_Destinazioni (IDDestinazione->IDDestinazione)
+      - belongs_to: Vettori (IDVettore->IDVettore)
+
+  CLIENTI_ANAGRAFICA:
+    attrs: [IDCliente_Anagrafica(int,PK), IDCategoria(int,FK), CodiceArca(varchar), Intestazione(varchar), PrefissoPartitaIVA(varchar), PartitaIva(varchar), CodiceFiscale(varchar), CodiceDestinatario(varchar), Pec(varchar), NazioneSedeLegale(varchar), IndirizzoSedeLegale(varchar), ProvinciaSedeLegale(varchar), ComuneSedeLegale(varchar), CAPSedeLegale(varchar), Tel1(varchar), Cel1(varchar), Fax1(varchar), Skype1(varchar), Email(varchar), SitoWeb(varchar), NoteFatture(varchar), NoteDDT(varchar), Annotazioni(varchar), Predefinito(bit), LocalitàComuneEsteroSedeLegale(varchar), ZipCodeSedeLegale(varchar), Valuta(int), Fido(float), IDCodiceIva(int,FK), IDContoCorrente(int,FK), IDAgente1(int,FK), IDAgente2(int,FK), IDModalitàDiPagamento(int,FK), IDDilazioneDiPagamento(int,FK), ScontoCliente(float), GiorniDiViaggio(int), AltriDatiGestionali(bit), ScontoExtraContabile(float), PercentualeAssicurazione(float), NoteSconto(varchar), TipoTrasporto_Porto(int), UtilizzaNotificaSpedizione(bit), ConStampaArrivi(bit), UtilizzaCodiceEdiPerUnitàDiMisura(bit), TipoTrasporto_TrasportoACura(varchar), IDRiferimentoAziendale(int,FK), AbbreviazioneC(varchar), CartellaAssociata(varchar), EsenzioneIva(bit), PasswordWeb(varchar), ResoPedane(bit), PalletPerFicheDaRendere(int), TipoTrasporto_Causale(varchar)]
+    rels: 
+      - has_many: Partenze (IDCliente_Anagrafica<-IDCliente)
+      - has_many: Clienti_Destinazioni (IDCliente_Anagrafica<-IDCliente_Anagrafica)
+
+  Clienti_Destinazioni:
+    attrs: [IDDestinazione(int,PK), IDCliente_Anagrafica(int,FK), DescrizioneSedeLogistica(varchar), NazioneSedeLogistica(varchar), LocalitàComuneEsteroSedeLogistica(varchar), IndirizzoSedeLogistica(varchar), ProvinciaSedeLogistica(varchar), ComuneSedeLogistica(varchar), CAPSedeLogistica(varchar), ZipCodeSedeLogistica(varchar), Tel(varchar), Cel(varchar), Fax(varchar), Skype(varchar), Email(varchar), CodiceUnivoco(varchar), Predefinita(bit), CodiceUnivocoDestinazione(varchar), AbbreviazioneDestinazione(varchar)]
+    rels: 
+      - belongs_to: CLIENTI_ANAGRAFICA (IDCliente_Anagrafica->IDCliente_Anagrafica)
+      - has_many: Partenze (IDDestinazione<-IDDestinazione)
+    
+  Vettori:
+    attrs: [IDVettore(int,PK), Tipo(int), Intestazione(varchar), PrefissoPartitaIVA(varchar), PartitaIva(varchar), CodiceFiscale(varchar), IscrizioneAlbo(varchar), NazioneSedeLegale(varchar), LocalitàComuneEsteroSedeLegale(varchar), IndirizzoSedeLegale(varchar), ProvinciaSedeLegale(varchar), ComuneSedeLegale(varchar), CAPSedeLegale(varchar), ZipCodeSedeLegale(varchar), Tel1(varchar), Cel1(varchar), Fax1(varchar), Skype1(varchar), Email(varchar), SitoWeb(varchar), Annotazioni(varchar), AbbreviazioneV(varchar)]
+    rels: 
+      - has_many: Partenze (IDVettore<-IDVettore)
+
+
+
+
+
+
+"""
